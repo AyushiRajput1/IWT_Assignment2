@@ -1,0 +1,355 @@
+<html>
+	<head>
+		<title>Resume</title>
+		<!--<link href="20style.css" type="text/css" rel="stylesheet" >-->
+		<style>
+		
+		body {
+			margin: 0;
+			padding: 0;
+			}
+			.container{
+				height:4500px;
+				display:flex;
+				flex-direction:column;
+			}
+			
+			#bk1{
+				background-color:#EB613D;
+			}
+			
+			#bk2{
+			
+				background-color:#A3D2DF;
+				align-items:center;
+			}
+			#bk3{
+			
+				background-color:#C6F0D5;
+			}
+			
+			#bk4{
+			
+				background-color:#FFEEB2;
+				
+			}
+			#bk5{
+			
+				background-color:#E8C8ED;
+			}
+			
+			#bk6{
+			
+				background-color:#F9D8C4;
+			}
+			#bk7{
+				background-color:#404448;				
+			}
+			
+			.content{
+				position:relative;
+				height:560px;
+				width:1060px;
+				background-color:white;
+				justify-content:center;
+				align-items:center;
+			}
+			.container2{
+				height:800px;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+			}
+			
+			.p1{
+				border-color:yellow;
+				margin:0px 100px 0px 100px;
+				height:78%;
+				width:31%;
+				font-size:20px;
+				float:left;
+			}
+			h1{
+				font-size:60px;
+				margin:-220px  0px 5px 100px;
+			}
+			.bp{
+				font-size:25px;
+				margin:-1px  0px 20px 100px;
+			}
+			
+			#p11{
+				margin:100px 0px 0px 200px;
+				font-size:25px;
+			}
+			
+			#a > img
+			{
+				height:140px;
+				width:130px;
+				border-radius:50%;
+				margin:-45px 0px 0px 450px;
+			}
+			
+			#b > img
+			{
+				height:100px;
+				width:100px;
+				border-radius:50%;
+				margin:150px 0px 0px -45px;
+			}
+			
+		#topdiv{
+			position:fixed;
+			background-color:black;
+			padding-left:124px;
+		}
+		
+		nav
+		{
+			top:-4px;
+            font-size:20px;
+            position:relative;
+			background-color:brown;
+		}
+
+        nav ul li
+        {
+			float:left;
+			color:white;
+			list-style-type: none;
+			margin:-10px 100px 0px 10px;
+			padding:-10px 100px 0px 10px;
+			position:relative;
+        }
+		
+		nav a
+		{
+			color: white;
+			text-decoration: none;
+			
+		}
+		</style>
+	</head>
+	
+	<body>
+		
+		<div class="container">
+			<div id="topdiv"><nav>
+			<ul>
+				<li><a href="#bk1">Profile</a></li> 
+				<li><a href="#bk2">Bio<a></li> 
+				<li><a href="#bk3">Code<a></li> 
+				<li><a href="#bk4">Projects<a></li> 
+				<li><a href="#bk5">Writings<a></li> 
+				<li><a href="#bk6">Podcasts<a></li> 
+				<li><a href="#bk7">Graveyard<a></li> 
+			</ul></div>
+		</nav>
+			<div id="bk1" class="container2">
+				<div class="content">
+					<div id="a">
+						<img src="images/profile.jpg" />
+					</div>
+					<p id="p11">
+						I’m Ayushi Rajput and currently doing my B.Tech from Banasthali Vidyapith.<br>
+						<br>
+						I’m originally from Meerut,Uttar Pradesh.<br>
+						<br>
+						My Aim is to escalate my technical skills so that I can contribute towards the development of technology.<br>
+					</p>
+				</div>
+			</div>
+			
+			<div id="bk2" class="container2">
+				<div class="content">
+					<div id="b">
+						<img src="images/bio.jpg" />
+					</div>
+					<div class="bio">
+						<h1>BIO</h1>
+						<p class="bp" >A little more about me.</p>
+					</div>
+					<p class="p1">
+						
+						I’ve always loved spending way too much time on the computer, and spent my teens tinkering with Photoshop and building crappy websites.
+						<br><br>
+						But after getting a computer science degree, I realized writing compilers wasn’t for me and decided to switch majors completely and learn Mandarin instead.
+						<br><br>
+						Yet as it turns out, my path would lead back to computers: after moving to China in 2006, I ended up quitting my language studies and getting a job in Beijing as a web designer.
+					</p>
+					<p class="p1">
+						After coming back to France in 2007, I became a freelance UI designer, working with companies such as Hipmunk, Intercom, and Le Monde.
+						<br><br>
+						A few years later, I decided what I really wanted was to create my own products, and set out to re-learn web programming.
+						<br><br>
+						After moving to Japan in 2012 for my wife’s studies, I now live in Kyoto and work on running developer surveys.
+					</p>
+				</div>
+			</div>
+			<div id="bk3" class="container2">
+				<div class="content">
+					<div id="b">
+						<img src="images/code.png" />
+					</div>
+					<div class="bio">
+						<h1>Code</h1>
+						<p class="bp" >The duct tape that keeps the world together.</p>
+					</div>
+					<p class="p1">
+						Vulcan.js<br><br>
+						An open-source full-stack app framework based on React, GraphQL, Meteor, and MongoDB. A.k.a. the “Rails for JavaScript”.
+						<br><br>
+						State Of JavaScript<br><br>
+						I got tired of all this talk of “JavaScript fatigue”, so I created a survey to get more data about recent trends in the JavaScript community.
+					</p>
+					<p class="p1">
+						Discover Meteor<br><br>
+						I learned the Meteor JavaScript framework to build Telescope, and decided to reinvest the knowledge I had just acquired to co-author a book together with Tom Coleman.
+						<br><br>
+						State Of CSS<br><br>
+						The State of JS survey’s little sister, all about CSS and HTML.
+					</p>
+				</div>
+			</div>
+			<div id="bk4" class="container2">
+				<div class="content">
+					<div id="b">
+						<img src="images/project.png" />
+					</div>
+					<div class="bio">
+						<h1>Projects</h1>
+						<p class="bp">1.Get Idea; 2. Launch; 3. ???; 4. Profit..</p>
+					</div>
+					<p class="p1">
+						Sidebar<br><br>
+						An open-source full-stack app framework based on React, GraphQL, Meteor, and MongoDB. A.k.a. the “Rails for JavaScript”.
+						<br><br>
+						Community Building Guide<br><br>
+						I got tired of all this talk of “JavaScript fatigue”, so I created a survey to get more data about recent trends in the JavaScript community.
+					</p>
+					<p class="p1">
+						Hacker News Kansai<br><br>
+						I learned the Meteor JavaScript framework to build Telescope, and decided to reinvest the knowledge I had just acquired to co-author a book together with Tom Coleman.
+						<br><br>
+						Design Portfolio<br><br>
+						The State of JS survey’s little sister, all about CSS and HTML.
+					</p>
+				</div>
+			</div>
+			<div id="bk5" class="container2">
+				<div class="content">
+					<div id="b">
+						<img src="images/writing.png" />
+					</div>
+					<div class="bio">
+						<h1>Writing</h1>
+						<p class="bp">Like coding, but with fewer bugs.</p>
+					</div>
+					<p class="p1">
+						A Study Plan To Cure JavaScript Fatigue<br>
+						2016<br>
+						An open-source full-stack app framework based on React, GraphQL, Meteor, and MongoDB. A.k.a. the “Rails for JavaScript”.
+						<br><br>
+						The Product Spectrum<br>
+						2014<br>
+						I got tired of all this talk of “JavaScript fatigue”, so I created a survey to get more data about recent trends in the JavaScript community.
+						<br><br>
+												
+					</p>
+					<p class="p1">
+						What Kind Of Logo Do You Get For $5?<br>
+						2014<br>
+						I learned the Meteor JavaScript framework to build Telescope, and decided to reinvest the knowledge I had just acquired to co-author a book together with Tom Coleman.
+						<br><br>
+						The Spiderweb Strategy<br>
+						2014<br>
+						The State of JS survey’s little sister, all about CSS and HTML.
+						<br><br>
+					</p>
+				</div>
+			</div>
+			<div id="bk6" class="container2">
+				<div class="content">
+					<div id="b">
+						<img src="images/podcast.png" />
+					</div>
+					<div class="bio">
+						<h1>Podcasts</h1>
+						<p class="bp">Now featuring 20% more French accent.</p>
+					</div>
+					<p class="p1">
+						UI Breakfast Podcast<br>
+						2016<br>
+						Episode 40: Learning Through Projects
+						<br><br>
+						Discover Meteor Podcast<br>
+						2015<br>
+						5 episodes covering various aspects of Meteor.
+						<br><br>
+						Product People<br>
+						2014<br>
+						EP63: How things get popular<br><br>
+						Upfront Podcast<br>
+						2013<br>
+						Episode 12 - MeteorJS and Side Projects
+					</p>
+					<p class="p1">
+						React Native Radio<br>
+						2016<br>
+						43 The State of JavaScript and React Native.
+						<br><br>
+						Binpress Podcast<br>
+						2015<br>
+						Episode 39
+						<br><br>
+						The Changelog<br>
+						2013<br>
+						Discover Meteor.js<br><br>
+						The Industry<br>
+						2012<br>
+						#10: Facebook IPO’d, The Toolbox launches, Parse for iOS and Android, and Say Hello to Octicons
+					</p>
+				</div>
+			</div>
+			<div id="bk7" class="container2">
+				<div class="content">
+					<div id="b">
+						<img src="images/gravyard.jpg" />
+					</div>
+					<div id="bio">
+						<h1>Graveyard</h1>
+						<p class="bp">You gotta learn to let them go.</p>
+					</div>
+					<p class="p1">
+						Screenings<br>
+						2015<br>
+						An attempt at building a directory of design talks. On life support due to a lack of updates.
+						<br><br>
+						The Toolbox<br>
+						2014<br>
+						 A directory of design resources. The domain expired, and then got a second life thanks to a new owner.
+						<br><br>
+						Folyo<br>
+						2011<br>
+						My first “startup”. After many years trying (and failing) to make it work, sold the site to the talented Workshop crew.
+						
+					</p>
+					<p class="p1">
+						BJJBot<br>
+						2015<br>
+						A directory of Brazilian Jiu-Jitsu videos that never quite took off.
+						<br><br>
+						SachaGreif.com<br>
+						2012<br>
+						The previous version of this site, a now-abandoned WordPress blog.
+						<br><br>
+						Patternify<br>
+						2011<br>
+						A simple pattern generation tool, and one of my first ever side projects. Still works!
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>
+            Card Layout
+        </title>
+        <style>
+            *{
+                box-sizing: border-box;
+                
+            }
+            .card
+            {
+                position:relative;
+                width:25%;
+                box-shadow:5px 2px gray;
+                margin: 10px;
+            }
+
+            .card > img
+            {
+                width:100%;
+                height:45%;
+            }
+            .desc
+            {
+                padding: 10px;
+                width:100%;
+                height:55%;
+                background-color:black;
+            }
+
+            .desc>h2
+            {
+                color:white;
+                font-size: 40px;
+                text-shadow:2px 2px gray;;
+            }
+            p{
+                color: white;
+            }
+
+            .date{
+                width:60%;
+                color: rgb(11, 1, 1);
+                font-size: 22px;
+                background-color: rgba(240, 244, 11, 0.5);
+                position: absolute;
+                top:39%;
+                left: 15%;
+                transform:rotate(-5deg);
+            }
+            body{
+                display: flex;
+                margin:0;
+                padding:0;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            
+            images=["15.jpeg","19.jpg","22.jpeg"]
+            date=["01-03-2023","02-03-2023","03-03-2023"]
+            title=["Eiffel Tower","Taj Mahal","Ganesha"]
+            desc=["The Eiffel Tower  is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel.The Eiffel Tower is the most visited monument with an entrance fee in the world: 6.91 million people ascended it in 2015. It was designated a monument historique in 1964, and was named part of a UNESCO World Heritage Site in 1991.","The Taj Mahal Crown of the Palace is an Islamic ivory-white marble mausoleum on the right bank of the river Yamuna in Agra, Uttar Pradesh, India. It was commissioned in 1631 by the fifth Mughal emperor, Shah Jahan to house the tomb of his favourite wife, Mumtaz Mahal.it also houses the tomb of Shah Jahan himself.","Ganesha also known as Ganapati, Vinayaka, and Pillaiyar, is one of the best-known and most worshipped deities in the Hindu pantheon and is the Supreme God in Ganapatya sect. His image is found throughout India."]
+            for(i=0;i<3;i++)
+            {
+                
+            card='<div class="card">'
+            +'<img src="images/'+images[i]+'" />'
+            +'<div class="date">'+date[i]+'</div>'
+            +'<div class="desc">'
+                +'    <h2>'+title[i]+'</h2>'
+                +'    <p>'+desc[i]+'</p>'
+            +'</div>'
+        +'   </div>'
+        document.write(card);
+            }
+           
+        </script>
+        </body>
+    </body>
+</html>

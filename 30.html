@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>
+            Guess The Number
+        </title>
+		
+		<style>
+			body{
+					text-align:center;
+					margin-top:3%;
+					background-color:purple;
+					color:white;
+				}
+			
+			h1{
+					font-size:60px;
+			    }
+				
+			#text{
+					height:20%;
+					width:36%;
+					margin-top:8%;
+					font-size:50px;
+					color:white;
+					margin-left:33%;
+			}
+			
+		</style>
+		
+    </head>
+    <body>
+	
+	<h1> GUESS THE NUMBER</h1>
+	
+		<div id="Number" >
+		    <input type="text" id="guessField" placeholder="Enter a Number" autofocus> 
+			<input type="submit" value="OK" id="submitguess" onclick="guess()" >
+		</div>
+	
+		<div id="text">
+			<p></p>
+		</div>
+		
+		<!--<div id="text2">
+			<p></p>
+		</div>-->
+		
+		<script type = "text/javascript">
+		
+				//var x =500;
+				function guess(){
+				x= Math.floor(Math.random()*(1000-0+1) )+0;
+				
+				var n = document.getElementById("guessField").value;
+				
+				//if(!Number.isInteger(n))
+				//{
+					//block=document.getElementById('text2');
+					//block.innerHTML="Please enter an integer number";
+					//block.style.backgroundColor="Slateblue";
+					
+				//}
+				block=document.getElementById('text');	
+				if(n<x)
+				{
+					block.innerHTML="Too Low! Try Again";
+					block.style.backgroundColor="Red";
+					document.getElementById("guessField").value = '';
+					
+				}
+				else if(n>x)
+				{
+					block.innerHTML="Too High! Try Again";
+					block.style.backgroundColor="Red";
+				}
+					
+				else if(n==x)
+				{	
+					block.innerHTML="Congratulations.You guessed the number!";	
+					block.style.backgroundColor="Green";
+				}
+				document.getElementById("guessField").value = '';
+			}
+        </script>
+    </body>
+	
+</html>

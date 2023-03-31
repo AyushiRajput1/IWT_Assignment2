@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<style>
+			
+			.item{
+				height:50px;
+				width:50px;
+				border:solid black 2px;
+				background-color:black;
+				border-radius:50%;
+				position:relative;
+				animation-name:box;
+				animation-duration:2.5s;
+				animation-iteration-count:infinite;
+			}
+			
+			
+			.container{
+				height:500px;
+				width:500px;
+				border:solid yellow 5px;
+				background:yellow;
+				display:flex;
+			}
+			
+			@keyframes box{
+				
+				0%{
+					top:0px;
+					left:0px;
+				}
+				20%{
+					top:450px;
+					left:0px;
+				}
+				
+				40%{
+					top:450px;
+					left:450px;
+				}
+				
+				60%{
+					top:0px;
+					left:450px;
+				}
+				
+				80%{
+					top:0px;
+					left:0px;
+				}
+				
+				100%{
+					top:0px;
+					left:0px;
+				}
+			}
+			
+			</style>
+		</head>
+	<body>
+		<div class="container" >
+			<div class="item">
+			</div>
+		</div>
+	</body>
+</html>

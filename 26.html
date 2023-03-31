@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>
+            StopWatch
+        </title>
+		<style>
+			
+			body{
+					background-color:purple;
+					text-align:center;
+					margin-top:15%;
+					color:white;
+					font-size:40px;
+			}
+		</style>
+    </head>
+    <body>
+
+        <div id="counter"></div>
+        <button onclick="x=setInterval(start,1000)">START</button>
+        <button onclick='clearInterval(x)'>STOP</button>
+        <button onclick="reset(x)">Reset</button>
+		 <button onclick="resume()">Resume</button>
+		 <!--<button onclick="restart(x)">Restart</button>-->
+       
+
+        <script type="text/javascript">
+            count=0;
+            function start()
+            {
+                block=document.getElementById('counter');
+                block.innerHTML=count;
+                count++;
+            }
+			function reset(x)
+			{
+				block=document.getElementById('counter');
+				clearInterval(x);
+				count=0;
+				block.innerHTML=count;
+				
+			}
+			//function restart(x)
+			//{
+			//	clearInterval(x);
+			//	count=0;
+			//	x=setInterval(start,1000);
+			//}
+			function resume()
+			{
+				x=setInterval(start,1000);
+			}
+            
+        </script>
+            
+        
+    </body>
+</html>

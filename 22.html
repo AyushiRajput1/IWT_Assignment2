@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            Chessboard
+        </title>
+        <style>
+                .container{
+                    
+                    display:flex;
+
+                }
+
+                .inner1{
+                    height:50px;
+                    width:50px;
+                    background-color: white;
+                    border:solid black 1px;
+                }
+
+                .inner1:hover{
+                    background-color: red;
+                }
+
+                .inner2{
+                    height:50px;
+                    width:50px;
+                    background-color: black;
+                }
+        </style>
+        
+    </head>
+    <body>
+        <script type="text/javascript">
+            r=prompt("Enter the number of rows: ")
+            c=prompt("Enter the number of columns: ")
+            for(i=0;i<r;i++)
+            {
+                document.write("<div class='container'>")
+                for(j=0;j<c;j++)
+                {
+                    if((i+j)%2==0)
+                        document.write("<div class='inner1'>1</div>")
+                    else
+                        document.write("<div class='inner2'>2</div>")
+                }
+                document.write("</div>")
+            }
+        </script>
+    </body>
+</html>

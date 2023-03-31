@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>
+            Display Text
+        </title>
+    </head>
+    <style>
+        div{
+            background-color: black;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            
+        }
+    </style>
+    <body>
+        <div id="text">TEXT_GROW</div>
+       
+        <script>
+            size=5;
+            block=document.getElementById('text');
+            
+            function increase()
+            {
+                block.style.color="red";
+                block.innerHTML="TEXT_GROWING";
+                block.style.fontSize=size++;
+                if(size==50)
+                {
+                    clearInterval(i);
+                    d=setInterval(decrease,100);
+                }    
+            }
+            function decrease()
+            {
+                block.style.color="blue";
+                block.innerHTML="TEXT_SHRINKING";
+                block.style.fontSize=size--;
+                if(size==5)
+                {
+                    clearInterval(d);
+                    i=setInterval(increase,100);
+                }
+            }
+            i = setInterval(increase,100);
+            
+        </script>
+    </body>
+</html>

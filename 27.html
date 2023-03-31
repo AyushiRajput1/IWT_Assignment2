@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            CLOCK
+        </title>
+        <style>
+            .clock
+            {
+                background-color: rgb(94, 162, 164);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="clock">
+        <script type="text/javascript">
+        function clock()
+        {
+            d=new Date();
+            hh=d.getHours();
+            mm=d.getMinutes();
+            ss=d.getSeconds();
+            cTime=hh+":"+mm+":"+ss;
+            block=document.getElementById('clock');
+            block.innerHTML=cTime;
+        }
+        setInterval(clock,1000);
+        </script>
+        </div>
+    </body>
+</html>
